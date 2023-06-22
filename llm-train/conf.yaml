@@ -1,0 +1,36 @@
+model:
+  model_id: "baichuan-inc/baichuan-7b"
+  SAVE_PATH: "./outputs/lora/"
+
+  max_length: 1024
+
+  use_grad_checkpoint: False
+
+  # Lora Train Config
+  use_lora: True
+  lora_r: 8
+  lora_alpha: 32
+  lora_dropout: 0.00
+  lora_module: ["W_pack"]
+  # lora_module: ["q_proj", "v_proj", "k_proj", "o_proj", "down_proj", "up_proj", "gate_proj"]
+
+  # QLoRA Train Config
+  use_qlora: False
+  qlora_doublequant: False
+  qlora_computetype: "fp16"
+
+dataset:
+  corpus: False
+  corpus_path: "./datasets/corpus/corpus.json"
+  corpus_epoch: 3
+
+  tough_sft: False
+  tough_sft_path: "./datasets/tough_sft/alpaca_data_cleaned.json"
+  tough_sft_epoch: 1
+
+  sft: True
+  sft_path: "./datasets/sft/xiyouji.json"
+  sft_epoch: 3
+
+
+
