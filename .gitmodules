@@ -1,0 +1,3 @@
+[submodule "attn-visual/attn-visual"]
+	path = attn-visual/attn-visual
+	url = https://github.com/cauyxy/attn-visual.git
