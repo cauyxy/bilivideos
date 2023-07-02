@@ -2,6 +2,8 @@
 
 This repository is used to generate the files needed for visualization in the frontend.
 
+If you want to use it directly, you can click [this link](https://attn-visual.yxinyu.com/).  
+
 ## Description
 
 This project contains a series of scripts to generate the files needed in the frontend. 
