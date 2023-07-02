@@ -6,6 +6,9 @@ This repository is used to generate the files needed for visualization in the fr
 
 This project contains a series of scripts to generate the files needed in the frontend. 
 
+Here is a sample.
+![Attention Visualization](sample.png)
+
 ## Installation
 
 Before you begin, make sure your system has the following software installed:
